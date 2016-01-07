@@ -1,0 +1,25 @@
+{
+  "name": "node-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for a Node REST server with Express, Flow type check and passport",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callicles/node-boilerplate.git"
+  },
+  "author": "Nicolas Joseph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/callicles/node-boilerplate/issues"
+  },
+  "homepage": "https://github.com/callicles/node-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
