@@ -6,6 +6,7 @@ const _ = require('lodash');
 
 /**
  * Imports the routes from the specified path recursively
+ *
  * @param {function} app Express app
  * @param {string}   path path of the directory to index first
  * @return {void}
@@ -18,7 +19,7 @@ function importRoutes(app, path) {
     if (fs.statSync(newPath).isDirectory()) {
       importRoutes(newPath);
     } else {
-      require('.' + p.sep + newPath.substring(newPath.indexOf(p.sep)))(app); // eslint-disable-line global-require
+      require('.' + p.sep + newPath.substring(newPath.indexOf(p.sep)))(app); // eslint-disable-line global-require, max-len
     }
   });
 }

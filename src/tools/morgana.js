@@ -213,7 +213,6 @@ function compile(format) {
   return new Function('tokens, req, res', js);
 }
 
-
 /**
  * Define a format with the given name.
  *
