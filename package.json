@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/callicles/node-boilerplate#readme",
   "dependencies": {
+    "basic-auth": "^1.0.3",
     "bluebird": "^3.3.1",
     "body-parser": "^1.15.0",
     "bunyan": "^1.7.0",
@@ -29,8 +30,7 @@
     "express": "^4.13.4",
     "express-session": "^1.13.0",
     "helmet": "^1.1.0",
-    "lodash": "^4.5.1",
-    "morgan": "^1.7.0"
+    "lodash": "^4.5.1"
   },
   "devDependencies": {
     "mocha": "^2.3.4",

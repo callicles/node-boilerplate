@@ -2,7 +2,6 @@
 
 const express = require('express');
 const session = require('express-session');
-const morgan = require('morgan');
 const bunyan = require('bunyan');
 const helmet = require('helmet');
 const compression = require('compression');
@@ -10,6 +9,7 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const cookieSession = require('cookie-session');
 const csrf = require('csurf');
+const morgana = require('./src/tools/morgana');
 
 const ENV_ENUM = {
   DEV: 'development',
@@ -28,7 +28,9 @@ const log = bunyan.createLogger({
   level: env === ENV_ENUM.DEV ? 'debug' : 'info'
 });
 
-app.use(morgan('common'));
+if (env !== ENV_ENUM.TEST) {
+  app.use(morgana(log, 'common'));
+}
 
 app.use(compression({
   threshold: config.compressionThreshold
