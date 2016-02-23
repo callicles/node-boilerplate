@@ -67,5 +67,5 @@ if (env !== ENV_ENUM.TEST) {
 require('./src/routes')(app);
 
 app.listen(port, function() {
-  log.info('Example app listening on port ' + port + '!');
+  log.info(config.appName + ' listening on port ' + port + '!');
 });
