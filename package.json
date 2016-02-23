@@ -19,12 +19,21 @@
   },
   "homepage": "https://github.com/callicles/node-boilerplate#readme",
   "dependencies": {
+    "bluebird": "^3.3.1",
+    "body-parser": "^1.15.0",
     "bunyan": "^1.7.0",
+    "compression": "^1.6.1",
+    "cookie-parser": "^1.4.1",
+    "cookie-session": "^1.2.0",
+    "csurf": "^1.8.3",
     "express": "^4.13.4",
-    "helmet": "^1.1.0"
+    "express-session": "^1.13.0",
+    "helmet": "^1.1.0",
+    "lodash": "^4.5.1",
+    "morgan": "^1.7.0"
   },
   "devDependencies": {
     "mocha": "^2.3.4",
-    "nodemon":"1.9.0"
+    "nodemon": "1.9.0"
   }
 }
